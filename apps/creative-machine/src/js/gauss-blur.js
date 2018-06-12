@@ -1,4 +1,4 @@
-function gaussBlur(imgData) {
+export function gaussBlur(imgData) {
     console.log(imgData);
     var pixes = imgData.data;
     var width = imgData.width;

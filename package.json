@@ -1,0 +1,31 @@
+{
+  "name": "canvas-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel apps/creative-machine/src/js -d apps/creative-machine/dist; webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kagol/canvas-app.git"
+  },
+  "keywords": [
+    "canvas"
+  ],
+  "author": "kagol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kagol/canvas-app/issues"
+  },
+  "homepage": "https://github.com/kagol/canvas-app#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "6.2.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0"
+  }
+}

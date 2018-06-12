@@ -1,3 +1,6 @@
+import { drawText } from "./draw-text";
+import { drawWaterDrop } from "./curve/water-drop";
+
 window.onload = function() {
     var canvasMain = document.getElementById('cvs-main');
     var context = canvasMain.getContext('2d');
@@ -24,6 +27,15 @@ window.onload = function() {
     context.moveTo(begin_x, begin_y);
     context.quadraticCurveTo(control_a_x, control_a_y, end_x, end_y);
     context.stroke();
+
+    drawText(context, "余温", { start_x: 130, start_y: 170 }, { color: '#FF0000' });
+
+
+    var begin_x = 200;
+    var begin_y = 400;
+    var precision = 360;
+    var size = 100;
+    drawWaterDrop(context, begin_x, begin_y, size, precision);
 
 }
 

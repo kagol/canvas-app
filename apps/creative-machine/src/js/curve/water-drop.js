@@ -6,7 +6,7 @@
  * @param {*} size 
  * @param {*} precision 
  */
-function drawWaterDrop(context, begin_x, begin_y, size, precision) {
+export function drawWaterDrop(context, begin_x, begin_y, size, precision) {
     context.beginPath();
     context.translate(begin_x, begin_y);
     context.rotate(3*Math.PI/2);
@@ -19,12 +19,12 @@ function drawWaterDrop(context, begin_x, begin_y, size, precision) {
     context.stroke();
 }
 
-window.onload = function() {
-    var canvasMain = document.getElementById('cvs-main');
-    var context = canvasMain.getContext('2d');
-    var begin_x = 200;
-    var begin_y = 400;
-    var precision = 360;
-    var size = 100;
-    drawWaterDrop(context, begin_x, begin_y, size, precision);
-}
+// window.onload = function() {
+//     var canvasMain = document.getElementById('cvs-main');
+//     var context = canvasMain.getContext('2d');
+//     var begin_x = 200;
+//     var begin_y = 400;
+//     var precision = 360;
+//     var size = 100;
+//     drawWaterDrop(context, begin_x, begin_y, size, precision);
+// }

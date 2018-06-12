@@ -2,9 +2,10 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <base href="../../">
     <title>Canvas app - Creative Machine</title>
-    <script src="../js/context-blender.js"></script>
-    <!-- <script src="../js/index.js"></script> -->
+    <!-- <script src="dist/context-blender.js"></script> -->
+    <script src="dist/bundle.js"></script>
     <!-- <script src="../js/curve/bezier-curves.js"></script> -->
     <!-- <script src="../js/curve/cubic-bezier-curves.js"></script> -->
     <!-- <script src="../js/curve/descartes-heart.js"></script> -->
@@ -15,14 +16,14 @@
     <!-- <script src="../js/draw-ploygon.js"></script> -->
     <!-- <script src="../js/gauss-blur.js"></script> -->
     <!-- <script src="../js/gray-process.js"></script> -->
-    <script src="../js/image-in-text.js"></script>
+    <!-- <script src="../js/image-in-text.js"></script> -->
     <!-- <script src="../js/relief-process.js"></script> -->
 </head>
 <body>
     <div style="position:relative;width:1500px;height:900px;">
         <canvas id="cvs-main" width=1500 height=1500 style="border: solid 1px #FFF"></canvas>
         <canvas id="cvs-text" width=500 height=300 style="position: absolute;right: 0;top:0"></canvas>
-        <img id="img-cat-rainbow" src="../images/cat-rainbow.png" style="display: none;" />
+        <img id="img-cat-rainbow" src="src/images/cat-rainbow.png" style="display: none;" />
     </div>
 </body>
 </html>
